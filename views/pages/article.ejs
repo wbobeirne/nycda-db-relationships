@@ -1,0 +1,30 @@
+<div class="article">
+	<h1><%- article.get("title") %></h1>
+	<p><%- article.get("body") %></p>
+</div>
+
+<div class="comments">
+	<h4 class="comments-title">Comments</h3>
+
+	<% if (comments && comments.length) { %>
+		<% for (let i = 0; i < comments.length; i++) { %>
+			<div class="comments-comment">
+				<div class="comments-comment-name">
+					<strong><%- comments[i].get("name") %></strong> says
+				</div>
+				<div class="comments-comment-body">
+					<%- comments[i].get("body") %>
+				</div>
+			</div>
+		<% } %>
+	<% } else { %>
+		<p class="comments-empty">No comments here!</p>
+	<% } %>
+
+	<form method="post" action="/comment" class="comments-form">
+		<input name="name" placeholder="Your name" class="comments-form-name"/>
+		<textarea name="body" placeholder="Your comment" class="comments-form-body"></textarea>
+		<input name="articleId" type="hidden" value="<%- article.get('id') %>"/>
+		<button class="comments-form-submit">Submit</button>
+	</form>
+</div>

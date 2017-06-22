@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>The Daily Dev - <%= title %></title>
+		<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/skeleton.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+	</head>
+	<body>
+		<div class="template">
+			<div class="template-header">
+				<a class="template-header-title" href="/">The Daily Dev</a>
+			</div>
+			<div class="template-content">
+				<%- include("./pages/" + page, pageArgs); %>
+			</div>
+			<div class="template-footer">
+				© The Daily Dev 2017
+			</div>
+		</div>
+	</body>
+</html>

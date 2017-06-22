@@ -1,0 +1,20 @@
+<div class="home">
+	<% if (articles && articles.length) { %>
+		<% for (let i = 0; i < articles.length; i++) { %>
+			<div class="home-article">
+				<h2 class="home-article-title">
+					<a href="/article/<%- articles[i].get('id') %>">
+						<%- articles[i].get("title") %>
+					</a>
+				</h2>
+				<p class="home-article-body">
+					<%- articles[i].get("body").slice(0, 300) %>
+				</p>
+			</div>
+		<% } %>
+	<% } else { %>
+		<p class="home-empty">
+			No articles yet! Why not <a href="/add">add one</a>?
+		</p>
+	<% } %>
+</div>

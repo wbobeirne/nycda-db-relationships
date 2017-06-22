@@ -1,0 +1,149 @@
+/* Template */
+body {
+	padding: 40px;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+	border: 1px solid #CCC;
+	border-radius: 0;
+}
+
+.template {
+	max-width: 720px;
+	min-height: 200px;
+	margin: 0 auto;
+}
+
+.template-header {
+	font-size: 38px;
+	font-weight: 100;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+.template-header-title {
+	color: #000;
+	text-decoration: none;
+}
+.template-header-title:hover {
+	color: #444;
+}
+
+.template-content {
+	padding: 20px 0;
+}
+
+.template-footer {
+	color: #AAA;
+	padding-top: 10px;
+	border-top: 1px solid #CCC;
+	font-size: 13px;
+}
+
+
+
+/* Homepage */
+.home-article {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #EEE;
+}
+.home-article:last-child {
+	border-bottom: none;
+}
+
+.home-article-title {
+	font-size: 22px;
+}
+
+.home-article-body {
+	font-size: 15px;
+}
+
+.home-empty {
+	text-align: center;
+	font-size: 24px;
+	color: #999;
+	padding: 80px 0;
+}
+
+
+/* Add form */
+.add {
+	max-width: 480px;
+	margin: 0;
+}
+
+.add-title {
+	font-size: 24px;
+}
+
+.add-body {
+	font-size: 16px;
+	min-height: 180px;
+}
+
+.add-error {
+	background: red;
+	color: #FFF;
+	width: 100%;
+	padding: 4px;
+	margin-bottom: 10px;
+}
+
+
+/* Article */
+.article {
+	margin-bottom: 60px;
+}
+
+/* Comments */
+.comments-comment {
+	margin-bottom: 10px;
+}
+
+.comments-comment-name {
+	font-size: 16px;
+}
+
+.comments-comment-body {
+	padding-left: 4px;
+	color: #555;
+}
+
+.comments-empty {
+	color: #AAA;
+	font-size: 18px;
+	padding: 20px 0;
+}
+
+.comments-form {
+	max-width: 380px;
+	padding-top: 20px;
+	margin-top: 20px;
+	border-top: 1px solid #EEE;
+}
+
+.comments-form-name {
+	font-size: 18px;
+}
+
+.comments-form-body {
+	font-size: 14px;
+}
+
+/* 404 */
+.fourohfour {
+	text-align: center;
+	font-size: 24px;
+	color: #999;
+	padding: 80px 0;
+}

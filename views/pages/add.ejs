@@ -1,0 +1,25 @@
+<form class="add" method="post">
+	<% if (typeof error !== "undefined") { %>
+		<p class="add-error"><%- error %></p>
+	<% } %>
+
+	<input
+		name="title"
+		class="add-field add-title"
+		placeholder="Title"
+		value="<%- title %>"
+	/>
+	<textarea
+		name="body"
+		class="add-field add-body"
+		placeholder="Body"
+		value="<%- body %>"
+	/></textarea>
+	<input
+		name="tags"
+		class="add-field add-tags"
+		placeholder="Tags (Comma separated)"
+		value="<%- tags %>"
+	/>
+	<button class="add-submit">Submit</button>
+</form>
